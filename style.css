@@ -1,31 +1,31 @@
-body {
+  body {
     font-family: 'Source Code Pro', monospace;
     background-color: rgb(218, 235, 250);
-}
+  }
 
-ul, .nav {
+  ul, .nav {
     background-color: rgb(192, 209, 255);
-}
+  }  
 
-ul, a, .nav-link active {
-color: rgb(40, 88, 219);
-}
+  ul, a, .nav-link active {
+    color: rgb(40, 88, 219);
+  }
 
-p {
+  p {
     text-align: center;
     color: rgb(40, 88, 219);
-}
+  }
 
-h5, .card-title {
+  h5, .card-title {
     text-align: center;
     color: rgb(24, 59, 155);
-}
+  }
 
-.card-body {
+  .card-body {
     background-color: rgb(215, 225, 252);
-}
+  }
 
-.wrapper {
+  .wrapper {
     padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
@@ -49,9 +49,23 @@ h5, .card-title {
     margin: 10px;
     color: rgb(40, 88, 219);
   }
-
+   
   .table {
     margin: 5px;
     color: rgb(40, 88, 219);
-
   }
+
+
+   ol, li {
+     color: rgb(40, 88, 219);
+  }
+
+   #question {
+    padding-left: 50px;
+   }
+
+
+
+
+
+  
