@@ -21,6 +21,10 @@
     color: rgb(24, 59, 155);
   }
 
+  h6 {
+    padding-left: 17px;
+  }
+
   .card-body {
     background-color: rgb(215, 225, 252);
   }

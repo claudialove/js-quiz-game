@@ -1,6 +1,4 @@
-//connecting javascript and html to create intended effects requires knowing how to SELECT elements and MANIPULATE them with logic.
-
-//the following elements will need to be SLECTED in order to be MANIPULATED
+//connecting javascript and html to create intended effects requires knowing how to SELECT elements and MANIPULATE them with logic.  The following elements will need to be SLECTED in order to be MANIPULATED
 
 
 //play game screen this element changes text to display each of the questions in the array that will be written containting a nested object for each question with a questions and a correct answer
@@ -8,7 +6,6 @@ var question = document.getElementById("question");
 
 //on play game screen - each #question has a list of multiple choice (li tags): one is correct and 2 are wrong - this element will need to change with hover over, and trigger and event to decide correct or incorrect and loop to the next question or end game if all questions have been looped through
 var lis = document.querySelectorAll("li");
-
 
 //on the all done screen the game is back in game over mode and this screen indicates the user answered all questions before the timer ran out - this screen has a span - the logic will have to store the score in an object and return this value to display in the span that starts as 0
 var score = document.getElementsByClassName("score");
@@ -45,10 +42,8 @@ var mainEl = document.getElementById("main");
       }, 1000);
     }
     function sendMessage() {
-      timeEl.textContent = " ";
-    
-      var gameOver = document.createElement("gameover");
-      gameOver.textContent = "GAME OVER!"  
+        var gameOver = document.createElement("div");
+        gameOver.innerHTML = "<p>GAME OVER!</p>";
     }
     setTime();
 
