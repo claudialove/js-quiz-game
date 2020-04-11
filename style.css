@@ -35,6 +35,50 @@
     padding-right: 20px;
   }
 
+  .container {
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translatex(-50%) translateY(-50%);
+    background: rgb(215, 225, 252);
+    padding: 20px;
+    border: 2px dashed rgb(91, 131, 241);
+    text-align: center;
+    color: rgb(40, 88, 219);
+  }
+
+  .title {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: rgb(40, 88, 219);
+  }
+
+  .question{
+    padding: 20px;
+    font-size: 22px;
+    background: rgb(215, 225, 252);
+    border-radius: 20px;
+  }
+
+  .option {
+    width: 470px;
+    display: inline-block;
+
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0);
+    margin: 10px 0 10px 10px;
+    border-radius: 20px;
+  }
+
+  .option:hover {
+    background:  rgb(40, 88, 219);
+    color: rgb(215, 225, 252);
+  }
+
   .card {
     margin: 50px auto;
     max-width: 1000px;
@@ -58,14 +102,41 @@
     margin: 5px;
     color: rgb(40, 88, 219);
   }
+   .card-text {
+    color: rgb(40, 88, 219);
 
+   }
 
-   ol, li {
-     color: rgb(40, 88, 219);
+  .next-btn {
+     border: none;
+     outline: none;
+     background: rgb(39, 72, 165);
+     width: 100px;
+     height: 50px;
+     cursor: pointer;
+     margin: 10px;
+     color: rgb(215, 225, 252);
+     vertical-align: middle;
+   }
+
+   #nextButton:hover {
+    background: rgb(62, 106, 226); 
+    color: rgb(221, 225, 236);
   }
 
-   #question {
-    padding-left: 50px;
+  .result {
+   height: 100px;
+   text-align: center;
+   font-size: 50px;
+  }
+
+   #clear-all {
+    color:  rgb(215, 225, 252); 
+   }
+
+   .option input:checked .option {
+     background: rgb(215, 225, 252);
+     color: black;
    }
 
 
