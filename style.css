@@ -35,20 +35,6 @@
     padding-right: 20px;
   }
 
-  .container {
-    height: 500px;
-    width: 800px;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translatex(-50%) translateY(-50%);
-    background: rgb(215, 225, 252);
-    padding: 20px;
-    border: 2px dashed rgb(91, 131, 241);
-    text-align: center;
-    color: rgb(40, 88, 219);
-  }
-
   .title {
     padding-top: 20px;
     text-align: center;
@@ -60,29 +46,29 @@
   .question{
     padding: 20px;
     font-size: 22px;
-    background: rgb(215, 225, 252);
     border-radius: 20px;
   }
 
   .option {
-    width: 470px;
+    width: 225px;
     display: inline-block;
-
     vertical-align: middle;
-    background: rgba(255, 255, 255, 0);
-    margin: 10px 0 10px 10px;
+    background: rgb(113, 143, 228); 
+    margin: 10px 0 10px 30px;
     border-radius: 20px;
   }
 
   .option:hover {
+
     background:  rgb(40, 88, 219);
     color: rgb(215, 225, 252);
   }
 
   .card {
     margin: 50px auto;
-    max-width: 1000px;
+    max-width: 1500px;
     border: 2px dashed rgb(91, 131, 241);
+    background-color: rgb(215, 225, 252);
   }
 
   .btn {
@@ -106,15 +92,15 @@
     color: rgb(40, 88, 219);
 
    }
-
   .next-btn {
      border: none;
      outline: none;
-     background: rgb(39, 72, 165);
+     background: rgb(113, 143, 228); 
      width: 100px;
      height: 50px;
      cursor: pointer;
-     margin: 10px;
+     margin-left: 30%;
+     margin-bottom: 5%;
      color: rgb(215, 225, 252);
      vertical-align: middle;
    }

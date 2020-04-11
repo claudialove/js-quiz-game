@@ -1,32 +1,32 @@
       //questions array
       var questions = [{
-          "question": "Who invented JavaScript?",
-            "option1": "Douglas Crockford",
-            "option2": "Sheryl Sandberg",
-            "option3": "Brendan Eich",
+          "question": "what makes blue cheese blue?",
+            "option1": "sugar",
+            "option2": "milk from blue cows",
+            "option3": "mold",
              "answer": "3"
         },{
-            "question": "Which of the following function of Array object removes the first element from an array and returns that element?",
-            "option1": "reverse()",
-            "option2": "shift()",
-            "option3": "slice()",
+            "question": "what is the name of the US Navy's aerial stunt team?",
+            "option1": "blue eagles",
+            "option2": "blue angels",
+            "option3": "blue thunder",
              "answer": "2"
         },{
-            "question": "Which of the following type of variable is visible everywhere in your JavaScript code?",
-            "option1": "global variable",
-            "option2": "local variable",
-            "option3": "both answers are correct",
+            "question": "what is the historical meaning of the term blue-blood?",
+            "option1": "that you are royalty",
+            "option2": "that you are an alien",
+            "option3": "that you are dying",
              "answer": "1"
         },{
-            "question": "Which built-in method combines the text of two strings and returns a new string?",
-            "option1": "append()",
-            "option2": "concat()",
-            "option3": "attach()",
+            "question": "what mood is the color blue most associated with?",
+            "option1": "joy",
+            "option2": "sadness",
+            "option3": "anger",
              "answer": "2"
         },{
-            "question": "What is the HTML tag under which one can write the JavaScript code?",
-            "option1": "<javascript>",
-            "option2": "<scripted>",
-            "option3": "<script>",
+            "question": "according to the song where did Fats Domino find his thrills?",
+            "option1": "blue lagoon",
+            "option2": "blue velvet",
+            "option3": "blueberry hill",
              "answer": "3"}
       ];

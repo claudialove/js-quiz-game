@@ -25,17 +25,18 @@
     </ul>
     <!-- End Nav -->
     <!-- start card -->
-   <div id="quizContainer" class="container">
+   <div class="card" style="width: 18rem;" id="quizContainer">
        <div id="question" class="question"></div>
        <label class="option"><input type="radio" name="option" value="1" /><span id="opt1"></span></label>
        <label class="option"><input type="radio" name="option" value="2" /><span id="opt2"></span></label> 
        <label class="option"><input type="radio" name="option" value="3" /><span id="opt3"></span></label>  
        <div><button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next Question</button>
        </div>
-   </div>
-   <div id="result" class="container result" style="display:none;">
-</div>
+    </div>
+
     <!-- end card -->
+    <!-- display correct or wrong -->
+    <div><p id="display">your guess is:  </p></div> 
 
 
     <!-- jQuery CDN -->

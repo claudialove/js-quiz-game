@@ -1,3 +1,19 @@
+//declare variables to select
+var currentQuestion = 0;
+var score = 0;
+var totQuestions = questions.length;
+var gameOver = false;
+
+var quizCard = document.getElementById('quizContainer');
+var questionEl = document.getElementById('question');
+var opt1 = document.getElementById('opt1');
+var opt2 = document.getElementById('opt2');
+var opt3 = document.getElementById('opt3');
+var nextButton = document.getElementById('nextButton');
+var result = document.getElementById('#result');
+var display = document.getElementById('#display');
+
+
 //timer logic SELECT and MANIPULATE
 var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
@@ -12,6 +28,9 @@ var mainEl = document.getElementById("main");
         if(secondsLeft === 0) {
           clearInterval(timerInterval);
           sendMessage();
+          window.location.href = "index.html";
+          gameOver = true;
+          return;
         }
     
       }, 1000);
@@ -22,21 +41,6 @@ var mainEl = document.getElementById("main");
       };
       //timer counts down but does not decrement if a wrong answer is picked - i work too slowly and had to choose to leave this out
       setTime();
-
-
-//declare variables to select
-var currentQuestion = 0;
-var score = 0;
-var totQuestions = questions.length;
-
-var container = document.getElementById('quizContainer');
-var questionEl = document.getElementById('question');
-var opt1 = document.getElementById('opt1');
-var opt2 = document.getElementById('opt2');
-var opt3 = document.getElementById('opt3');
-var nextButton = document.getElementById('nextButton');
-var resultCont = document.getElementById('result');
-
 
    //see question.js file for question array
     
@@ -57,8 +61,10 @@ var resultCont = document.getElementById('result');
            }
            var answer = selectedOption.value;
            if(questions[currentQuestion].answer == answer) {
-           score += 10;
-          //worked hard and still didnt get to adding "correct" or "wrong" answer in game play
+             score += 10;
+             alert("Correct!" + " Current score is: " + score + " points");
+       } else {
+        alert("Wrong!" + " Current score is: " + score + " points");
        }
        selectedOption.checked = false;
        currentQuestion++;
@@ -66,11 +72,9 @@ var resultCont = document.getElementById('result');
            nextButton.textContent = 'Finish';
        }
        if (currentQuestion == totQuestions) {
-           container.style.display = 'none';
-           resultCont.style.display = '';
-           resultCont.textContent = 'YourScore: ' + score;
+           window.location.href = "all-done.html";
+           result.textContent = score;
            return;
-
        }
        loadQuestion(currentQuestion);
     }
